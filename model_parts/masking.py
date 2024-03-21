@@ -1,3 +1,5 @@
+import tensorflow as tf
+
 def create_padding_mask(seq):
     """
     padding이 되어 있는 부분을 찾아서 mask를 만드는 함수
