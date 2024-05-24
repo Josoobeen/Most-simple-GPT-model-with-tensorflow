@@ -1,6 +1,6 @@
 import tensorflow as tf
 from tensorflow.keras.layers import Dense
-from scaled_dot_product_attention import scaled_dot_product_attention
+from .scaled_dot_product_attention import scaled_dot_product_attention
 
 def multi_head_attention(q, k, v, num_heads, head_dim, mask = None):
     batch_size = tf.shape(q)[0]
